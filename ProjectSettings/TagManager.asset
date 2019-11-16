@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - road
+  - Pokaali
   layers:
   - Default
   - TransparentFX

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AjoKoodi : MonoBehaviour
 
@@ -10,7 +11,7 @@ public class AjoKoodi : MonoBehaviour
       // Start is called before the first frame update
       void Start()
     {
-    
+        
     } //start
 
     
@@ -19,10 +20,15 @@ public class AjoKoodi : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        Vector3 aali = GameObject.FindGameObjectWithTag("Pokaali").transform.position;
         Vector3 xyz = this.transform.position;
         float x = xyz.x;
         float y = xyz.y;
         float z = 0;
+        
+        
+        
         //y akselin ohjaus
         if (y < 5 && y > 3)
         {
@@ -80,6 +86,10 @@ public class AjoKoodi : MonoBehaviour
         //driving the car
         //d = 1, w = 2, a = 3, s = 4
         Vector3 pos = new Vector3(x, y, z);
+        if (pos == aali)
+        {
+            SceneManager.LoadScene("end");
+        }
         if (instantiatepalikka.existingPositions.Contains(pos))
         {
             if (Input.GetKey(KeyCode.W))
@@ -110,7 +120,9 @@ public class AjoKoodi : MonoBehaviour
 
                 this.GetComponent<Transform>().Rotate(0f, 0f, -90f);
 
-            }//if
+            }
+
+            //if
 
         }
     } //update
