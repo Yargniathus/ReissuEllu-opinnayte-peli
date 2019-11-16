@@ -19,7 +19,8 @@ public class TileSpawn : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {    
+
         if (Input.GetKeyDown(KeyCode.RightControl))
         {
             int rdm = Random.Range(1, 4);
