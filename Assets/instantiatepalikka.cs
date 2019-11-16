@@ -31,6 +31,60 @@ public class instantiatepalikka : MonoBehaviour
             Vector3 xyz = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             float x = xyz.x;
             float y = xyz.y;
+            //y akselin ohjaus
+            if (y < 5 && y > 3)
+                {
+                y = 4;
+                }
+            if (y < 3 && y > 1)
+            {
+                y = 2;
+            }
+            if (y < 1 && y > -1)
+            {
+                y = 0;
+            }
+            if (y < -1 && y > -3)
+            {
+                y = -2;
+            }
+            if (y < -3 && y > -5)
+            {
+                y = -4;
+            }
+            //x akselin ohjaus
+            if (x > -8 && x < -6)
+            {
+                x = -7;
+            }
+            if (x > -6 && x < -4)
+            {
+                x = -5;
+            }
+            if (x > -4 && x < -2)
+            {
+                x = -3;
+            }
+            if (x > -2 && x < 0)
+            {
+                x = -1;
+            }
+            if (x > 0 && x < 2)
+            {
+                x = 1;
+            }
+            if (x > 2 && x < 4)
+            {
+                x = 3;
+            }
+            if (x > 4 && x < 6)
+            {
+                x = 5;
+            }
+            if (x > 6 && x < 8)
+            {
+                x = 7;
+            }
             // Instantiate the projectile at the position and rotation of this transform
 
             Instantiate(myPrefab, new Vector3(x, y, 0), Quaternion.identity);
