@@ -21,7 +21,7 @@ public class AjoKoodi : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {         
                        
-            this.GetComponent<Transform>().Translate(Time.deltaTime * 0f, 0.075f, 0f);
+            this.GetComponent<Transform>().Translate(Time.deltaTime * 0f, 0.05f, 0f);
             
         }//if
 

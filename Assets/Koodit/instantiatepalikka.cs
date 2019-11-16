@@ -22,7 +22,7 @@ public class instantiatepalikka : MonoBehaviour
     {
         //if (myPrefab != null)
         //{
-            myPrefab = Resources.Load("phroad") as GameObject;
+            myPrefab = Resources.Load("PHRoad") as GameObject;
         //}
         // Mouse1 heittää palikan xarvo yarvo kohtaan
         if (Input.GetKeyDown(KeyCode.LeftControl))

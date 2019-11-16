@@ -77,13 +77,13 @@ public class TileSpawn : MonoBehaviour
                         break;
 
                     case 6:
-                        GameObject aputie6 = Instantiate(this.tie5, new Vector3(-10f, 3f, 0f), Quaternion.identity);
+                        GameObject aputie6 = Instantiate(this.tie6, new Vector3(-10f, 3f, 0f), Quaternion.identity);
                         aputie6.name = "tie6";
 
                         break;
 
                     case 7:
-                        GameObject aputie7 = Instantiate(this.tie5, new Vector3(-10f, 3f, 0f), Quaternion.identity);
+                        GameObject aputie7 = Instantiate(this.tie7, new Vector3(-10f, 3f, 0f), Quaternion.identity);
                         aputie7.name = "tie7";
 
                         break;
@@ -136,13 +136,13 @@ public class TileSpawn : MonoBehaviour
                             break;
 
                         case 6:
-                            GameObject aputie6 = Instantiate(this.tie5, new Vector3(-10f, 0f, 0f), Quaternion.identity);
+                            GameObject aputie6 = Instantiate(this.tie6, new Vector3(-10f, 0f, 0f), Quaternion.identity);
                             aputie6.name = "tie6";
 
                             break;
 
                         case 7:
-                            GameObject aputie7 = Instantiate(this.tie5, new Vector3(-10f, 0f, 0f), Quaternion.identity);
+                            GameObject aputie7 = Instantiate(this.tie7, new Vector3(-10f, 0f, 0f), Quaternion.identity);
                             aputie7.name = "tie7";
 
                             break;
@@ -193,13 +193,13 @@ public class TileSpawn : MonoBehaviour
                             break;
 
                         case 6:
-                            GameObject aputie6 = Instantiate(this.tie5, new Vector3(-10f, -3f, 0f), Quaternion.identity);
+                            GameObject aputie6 = Instantiate(this.tie6, new Vector3(-10f, -3f, 0f), Quaternion.identity);
                             aputie6.name = "tie6";
 
                             break;
 
                         case 7:
-                            GameObject aputie7 = Instantiate(this.tie5, new Vector3(-10f, -3f, 0f), Quaternion.identity);
+                            GameObject aputie7 = Instantiate(this.tie7, new Vector3(-10f, -3f, 0f), Quaternion.identity);
                             aputie7.name = "tie7";
 
                             break;
