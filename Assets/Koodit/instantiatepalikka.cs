@@ -9,8 +9,8 @@ public class instantiatepalikka : MonoBehaviour
     public float yarvo = 1.0F;
     public float x = 1.0F;
     public float y = 1.0F;
-    List<Vector3> existingPositions = new List<Vector3>();
-
+    public static List<Vector3> existingPositions = new List<Vector3>();
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +22,7 @@ public class instantiatepalikka : MonoBehaviour
     {
         //if (myPrefab != null)
         //{
-            myPrefab = Resources.Load("PHRoad") as GameObject;
+            myPrefab = Resources.Load("phroad") as GameObject;
         //}
         // Mouse1 heittää palikan xarvo yarvo kohtaan
         if (Input.GetKeyDown(KeyCode.LeftControl))
