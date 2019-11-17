@@ -10,11 +10,30 @@ public class instantiatepalikka : MonoBehaviour
     public float x = 1.0F;
     public float y = 1.0F;
     public static List<Vector3> existingPositions = new List<Vector3>();
-   
+
+
+
+    public GameObject tie1 = null;
+    public GameObject tie2 = null;
+    public GameObject tie3 = null;
+    public GameObject tie4 = null;
+    public GameObject tie5 = null;
+    public GameObject tie6 = null;
+    public GameObject tie7 = null;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
+        tie1 = GameObject.Find("Tie_horzi");
+        tie2 = GameObject.Find("Tie_OA");
+        tie3 = GameObject.Find("Tie_OY");
+        tie4 = GameObject.Find("Tie_risteys");
+        tie5 = GameObject.Find("Tie_VA");
+        tie6 = GameObject.Find("Tie_verti");
+        tie7 = GameObject.Find("Tie_VY");
+
     }
 
     // Update is called once per frame
@@ -22,7 +41,7 @@ public class instantiatepalikka : MonoBehaviour
     {
         //if (myPrefab != null)
         //{
-            myPrefab = Resources.Load("phroad") as GameObject;
+        //    myPrefab = Resources.Load("phroad") as GameObject;
         //}
         // Mouse1 heittää palikan xarvo yarvo kohtaan
         if (Input.GetKeyDown(KeyCode.LeftControl))
@@ -91,11 +110,62 @@ public class instantiatepalikka : MonoBehaviour
             Vector3 pos = new Vector3(x, y, z);
             if (!(existingPositions.Contains(pos)))
             {
-                Instantiate(myPrefab, new Vector3(x, y, 0), Quaternion.identity);
+                switch (TileSpawn.tapaus)
+                {
+                    case 1:
+                        GameObject aputie1 = Instantiate(this.tie1, new Vector3(x, y, 0), Quaternion.identity);
+                        aputie1.name = "tie1";
+                        
+                        break;
+
+                    case 2:
+                        GameObject aputie2 = Instantiate(this.tie2, new Vector3(x, y, 0), Quaternion.identity);
+                        aputie2.name = "tie2";
+                        
+                        break;
+
+                    case 3:
+                        GameObject aputie3 = Instantiate(this.tie3, new Vector3(x, y, 0), Quaternion.identity);
+                        aputie3.name = "tie3";
+                        
+                        break;
+
+                    case 4:
+                        GameObject aputie4 = Instantiate(this.tie4, new Vector3(x, y, 0), Quaternion.identity);
+                        aputie4.name = "tie4";
+                        
+                        break;
+
+                    case 5:
+                        GameObject aputie5 = Instantiate(this.tie5, new Vector3(x, y, 0), Quaternion.identity);
+                        aputie5.name = "tie5";
+                        
+                        break;
+
+                    case 6:
+                        GameObject aputie6 = Instantiate(this.tie6, new Vector3(x, y, 0), Quaternion.identity);
+                        aputie6.name = "tie6";
+                        
+                        break;
+
+                    case 7:
+                        GameObject aputie7 = Instantiate(this.tie7, new Vector3(x, y, 0), Quaternion.identity);
+                        aputie7.name = "tie7";
+                        
+                        break;
+
+                }//switch
+
+                //Instantiate(myPrefab, new Vector3(x, y, 0), Quaternion.identity);
                 existingPositions.Add(pos);
-            }
+
+                TileSpawn.tapaus = 0;
+
+
+            }//if
+
                 
-            }
+        }
         
     }
 }
