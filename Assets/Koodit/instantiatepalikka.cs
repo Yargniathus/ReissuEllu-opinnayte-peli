@@ -44,7 +44,7 @@ public class instantiatepalikka : MonoBehaviour
         //    myPrefab = Resources.Load("phroad") as GameObject;
         //}
         // Mouse1 heittää palikan xarvo yarvo kohtaan
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
             {
 
             //pointterinlocaatio
@@ -159,13 +159,14 @@ public class instantiatepalikka : MonoBehaviour
                 //Instantiate(myPrefab, new Vector3(x, y, 0), Quaternion.identity);
                 existingPositions.Add(pos);
 
-                TileSpawn.tapaus = 0;
+               
 
 
             }//if
 
-                
-        }
+            TileSpawn.tapaus = 0;
+
+        }//if
         
     }
 }

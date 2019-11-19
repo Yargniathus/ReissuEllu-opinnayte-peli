@@ -13,7 +13,7 @@ public class JosNytVihdoinKoodi : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(this.GetComponent<Transform>().position.x < -8 && TileSpawn.tapaus==0)
+        if(this.GetComponent<Transform>().position.x < -7 && TileSpawn.tapaus==0)
         {
             Destroy(this.gameObject);
 
