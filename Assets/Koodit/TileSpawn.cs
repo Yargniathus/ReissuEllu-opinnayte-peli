@@ -44,6 +44,68 @@ public class TileSpawn : MonoBehaviour
         tie6 = GameObject.Find("Tie_verti");
         tie7 = GameObject.Find("Tie_VY");
 
+        //Ensimmäinen palikka
+        int rdm2 = Random.Range(1, 8);
+        Vector3 pos2 = new Vector3(-10f, 0f, 0f);
+
+        switch (rdm2)
+        {
+            case 1:
+                GameObject aputie1 = Instantiate(this.tie1, new Vector3(-9.5f, 0f, 0f), Quaternion.identity);
+                aputie1.name = "tie1";
+
+                tapaus = 1;
+
+                break;
+
+            case 2:
+                GameObject aputie2 = Instantiate(this.tie2, new Vector3(-9.5f, 0f, 0f), Quaternion.identity);
+                aputie2.name = "tie2";
+                tapaus = 2;
+                apuva = aputie2;
+                break;
+
+            case 3:
+                GameObject aputie3 = Instantiate(this.tie3, new Vector3(-9.5f, 0f, 0f), Quaternion.identity);
+                aputie3.name = "tie3";
+                tapaus = 3;
+                apuva = aputie3;
+                break;
+
+            case 4:
+                GameObject aputie4 = Instantiate(this.tie4, new Vector3(-9.5f, 0f, 0f), Quaternion.identity);
+                aputie4.name = "tie4";
+                tapaus = 4;
+                apuva = aputie4;
+                break;
+
+            case 5:
+                GameObject aputie5 = Instantiate(this.tie5, new Vector3(-9.5f, 0f, 0f), Quaternion.identity);
+                aputie5.name = "tie5";
+                tapaus = 5;
+                apuva = aputie5;
+                break;
+
+            case 6:
+                GameObject aputie6 = Instantiate(this.tie6, new Vector3(-9.5f, 0f, 0f), Quaternion.identity);
+                aputie6.name = "tie6";
+                tapaus = 6;
+                apuva = aputie6;
+                break;
+
+            case 7:
+                GameObject aputie7 = Instantiate(this.tie7, new Vector3(-9.5f, 0f, 0f), Quaternion.identity);
+                aputie7.name = "tie7";
+                tapaus = 7;
+                apuva = aputie7;
+                break;
+
+        }//switch
+
+        tapaus = rdm2;
+
+        existingPositionz.Add(pos2);
+
         //int rdm1 = Random.Range(1, 8);
 
         //switch (rdm1)
@@ -111,7 +173,7 @@ public class TileSpawn : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse1))
+        if (Input.GetKeyUp(KeyCode.Mouse0))
         {
             //    ////if(tapaus==0)
             ////{
