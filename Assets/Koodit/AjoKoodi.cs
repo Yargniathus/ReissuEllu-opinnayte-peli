@@ -95,14 +95,14 @@ public class AjoKoodi : MonoBehaviour
             if (Input.GetKey(KeyCode.W))
             {
 
-                this.GetComponent<Transform>().Translate(Time.deltaTime * 0f, 0.075f, 0f);
+                this.GetComponent<Transform>().Translate(0f,Time.deltaTime *  1.6f, 0f);
 
             }//if
 
             if (Input.GetKey(KeyCode.S))
             {
 
-                this.GetComponent<Transform>().Translate(Time.deltaTime * 0f, -0.025f, 0f);
+                this.GetComponent<Transform>().Translate(0f,Time.deltaTime * -0.8f, 0f);
 
             }//if
 
