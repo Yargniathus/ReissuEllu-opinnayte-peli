@@ -158,10 +158,10 @@ public class instantiatepalikka : MonoBehaviour
 
                
 
-
+            TileSpawn.tapaus = 0;
             }//if
 
-            TileSpawn.tapaus = 0;
+            
 
         }//if
         
