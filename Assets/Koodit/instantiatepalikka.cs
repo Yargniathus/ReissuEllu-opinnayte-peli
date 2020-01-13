@@ -39,10 +39,7 @@ public class instantiatepalikka : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (myPrefab != null)
-        //{
-        //    myPrefab = Resources.Load("phroad") as GameObject;
-        //}
+       
         // Mouse1 heittää palikan xarvo yarvo kohtaan
         if (Input.GetKeyDown(KeyCode.Mouse0))
             {
@@ -108,7 +105,7 @@ public class instantiatepalikka : MonoBehaviour
             }
             // Instantiate the projectile at the position and rotation of this transform
             Vector3 pos = new Vector3(x, y, z);
-            if (!(existingPositions.Contains(pos)))
+            if (!(existingPositions.Contains(pos)) && !(x>8 || x<-8 || y>5 || y<-5))
             {
                 switch (TileSpawn.tapaus)
                 {
