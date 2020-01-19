@@ -6,6 +6,10 @@ TagManager:
   tags:
   - road
   - Pokaali
+  - vasen
+  - oikea
+  - up
+  - down
   layers:
   - Default
   - TransparentFX
