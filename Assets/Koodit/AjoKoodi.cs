@@ -88,6 +88,7 @@ public class AjoKoodi : MonoBehaviour
         Vector3 pos = new Vector3(x, y, z);
         if (pos == aali)
         {
+            PlayerPrefs.SetFloat("finalPoints", Pisteet.pisteet);
             SceneManager.LoadScene("end");
         }
         if (instantiatepalikka.existingPositions.Contains(pos))

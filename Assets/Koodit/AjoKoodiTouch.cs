@@ -88,6 +88,7 @@ public class AjoKoodiTouch : MonoBehaviour
         if (pos == aali)
         {
             SceneManager.LoadScene("end");
+            PlayerPrefs.SetFloat("finalPoints", Pisteet.pisteet);
         }
         if (instantiatepalikka.existingPositions.Contains(pos))
         {

@@ -112,43 +112,47 @@ public class instantiatepalikka : MonoBehaviour
                     case 1:
                         GameObject aputie1 = Instantiate(this.tie1, new Vector3(x, y, 0), Quaternion.identity);
                         aputie1.name = "tie1";
-                        
+                        //pisteiden vähennys
+                        Pisteet.pisteet -= 2.5f;
+
                         break;
 
                     case 2:
                         GameObject aputie2 = Instantiate(this.tie2, new Vector3(x, y, 0), Quaternion.identity);
                         aputie2.name = "tie2";
-                        
+                        Pisteet.pisteet -= 2.5f;
+
                         break;
 
                     case 3:
                         GameObject aputie3 = Instantiate(this.tie3, new Vector3(x, y, 0), Quaternion.identity);
                         aputie3.name = "tie3";
-                        
+                        Pisteet.pisteet -= 2.5f;
+
                         break;
 
                     case 4:
                         GameObject aputie4 = Instantiate(this.tie4, new Vector3(x, y, 0), Quaternion.identity);
                         aputie4.name = "tie4";
-                        
+                        Pisteet.pisteet -= 2.5f;
                         break;
 
                     case 5:
                         GameObject aputie5 = Instantiate(this.tie5, new Vector3(x, y, 0), Quaternion.identity);
                         aputie5.name = "tie5";
-                        
+                        Pisteet.pisteet -= 2.5f;
                         break;
 
                     case 6:
                         GameObject aputie6 = Instantiate(this.tie6, new Vector3(x, y, 0), Quaternion.identity);
                         aputie6.name = "tie6";
-                        
+                        Pisteet.pisteet -= 2.5f;
                         break;
 
                     case 7:
                         GameObject aputie7 = Instantiate(this.tie7, new Vector3(x, y, 0), Quaternion.identity);
                         aputie7.name = "tie7";
-                        
+                        Pisteet.pisteet -= 2.5f;
                         break;
 
                 }//switch
