@@ -11,6 +11,9 @@ public class instantiatepalikka : MonoBehaviour
     public float y = 1.0F;
     public static List<Vector3> existingPositions = new List<Vector3>();
 
+    public bool ylempi = false;
+    public bool alempi = false;
+
 
 
     public GameObject tie1 = null;
@@ -39,9 +42,9 @@ public class instantiatepalikka : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+    
         // Mouse1 heittää palikan xarvo yarvo kohtaan
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyUp(KeyCode.Mouse0))
             {
 
             //pointterinlocaatio

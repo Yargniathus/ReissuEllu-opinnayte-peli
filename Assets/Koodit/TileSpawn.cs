@@ -14,6 +14,9 @@ public class TileSpawn : MonoBehaviour
 
     public bool apuva = false;
 
+    public bool ylempi = false;
+    public bool alempi = false;
+
 
     public static int tapaus = 0;
 
@@ -35,6 +38,7 @@ public class TileSpawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       
         tie1 = GameObject.Find("Tie_horzi");
         tie2 = GameObject.Find("Tie_OA");
         tie3 = GameObject.Find("Tie_OY");
@@ -159,33 +163,39 @@ public class TileSpawn : MonoBehaviour
                 break;
 
         }//switch
+                             
 
-
-
-        //HOXHOX!!!
-        //At the moment only uses the upper tile to be selected as the one to be spawnd
-        tapaus = rdm2;
-
-               
-        existingPositionz.Add(pos2);
-
-       
 
     }//start
+
 
     // Update is called once per frame
     void Update()
     {
+        //determines which tile to use
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            ylempi = true;
+            alempi = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            alempi = true;
+            ylempi = false;
+        }
+
         if (tapaus == 0)
         {
             existingPositionz.Clear();
 
         }
 
-        if (Input.GetKeyUp(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
+            Debug.Log(ylempi);
             //hiiren position tarkistus huijaamisen estämiseksi
-                Vector3 xyzhiiri = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector3 xyzhiiri = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 float xhiiri = xyzhiiri.x;
                 float yhiiri = xyzhiiri.y;
                 float zhiiri = 0;
@@ -197,15 +207,18 @@ public class TileSpawn : MonoBehaviour
             //also if the click is on the grid
             if (!(existingPositionz.Contains(pos2)) && !(xhiiri > 8 || xhiiri < -8 || yhiiri > 5 || yhiiri < -5))
             {
-                
-                int rdm2 = Random.Range(1, 8);
+
+
+                //TÄLLÄ HETKELLÄ SPAWNAA PELKÄSTÄÄN PALIKKAA 1, TESTITARKOITUKSEKSI
+                //upper tile randomization
+                int rdm2 = Random.Range(1, 2);
 
                 switch (rdm2)
                 {
                     case 1:
                         GameObject aputie1 = Instantiate(this.tie1, new Vector3(-9.5f, 1.3f, 0f), Quaternion.identity);
                         aputie1.name = "tie1";
-
+                        apuva = aputie1;
                         tapaus = 1;
 
                         break;
@@ -254,15 +267,17 @@ public class TileSpawn : MonoBehaviour
 
                 }//switch
 
+
                 //lower tile randomization
-                int rdm1 = Random.Range(1, 8);
+                int rdm1 = Random.Range(2, 3);
+                //TÄLLÄ HETKELLÄ SPAWNAA PELKÄSTÄÄN PALIKKAA 2, TESTITARKOITUKSEKSI
                 //lower tile spawn on click
                 switch (rdm1)
                 {
                     case 1:
                         GameObject aputie1 = Instantiate(this.tie1, new Vector3(-9.5f, -1.3f, 0f), Quaternion.identity);
                         aputie1.name = "tie1";
-
+                        apuva = aputie1;
                         tapaus = 1;
 
                         break;
@@ -312,12 +327,22 @@ public class TileSpawn : MonoBehaviour
                 }//switch
 
 
-
-                //this selects the upper tile only
-                tapaus = rdm2;      
                 
+                //this selects the upper tile only
+                if (ylempi == true)
+                {          
+                    tapaus = rdm2;
 
-                existingPositionz.Add(pos2);                
+                    existingPositionz.Add(pos2);
+                }
+
+                //selects the lower tile
+                if (alempi == true)
+                {
+                    tapaus = rdm1;
+
+                    existingPositionz.Add(pos1);
+                }
 
             }
                 
