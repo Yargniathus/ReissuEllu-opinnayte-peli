@@ -19,6 +19,7 @@ public class TileSpawn : MonoBehaviour
 
 
     public static int tapaus = 0;
+    public static int tapaus2 = 0;
 
     public static int rdm1 = 0;
     public static int rdm2 = 0;
@@ -172,28 +173,18 @@ public class TileSpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //determines which tile to use
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            ylempi = true;
-            alempi = false;
-        }
-
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            alempi = true;
-            ylempi = false;
-        }
+        
 
         if (tapaus == 0)
         {
             existingPositionz.Clear();
 
         }
+                
 
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyUp(KeyCode.Mouse0))
         {
-            Debug.Log(ylempi);
+            
             //hiiren position tarkistus huijaamisen estämiseksi
             Vector3 xyzhiiri = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 float xhiiri = xyzhiiri.x;
@@ -211,7 +202,10 @@ public class TileSpawn : MonoBehaviour
 
                 //TÄLLÄ HETKELLÄ SPAWNAA PELKÄSTÄÄN PALIKKAA 1, TESTITARKOITUKSEKSI
                 //upper tile randomization
-                int rdm2 = Random.Range(1, 2);
+                int rdm2 = Random.Range(1, 8);
+                //lower tile randomization
+                int rdm1 = Random.Range(1, 8);
+
 
                 switch (rdm2)
                 {
@@ -219,57 +213,55 @@ public class TileSpawn : MonoBehaviour
                         GameObject aputie1 = Instantiate(this.tie1, new Vector3(-9.5f, 1.3f, 0f), Quaternion.identity);
                         aputie1.name = "tie1";
                         apuva = aputie1;
-                        tapaus = 1;
+                        tapaus2 = 1;
 
                         break;
 
                     case 2:
                         GameObject aputie2 = Instantiate(this.tie2, new Vector3(-9.5f, 1.3f, 0f), Quaternion.identity);
                         aputie2.name = "tie2";
-                        tapaus = 2;
+                        tapaus2 = 2;
                         apuva = aputie2;
                         break;
 
                     case 3:
                         GameObject aputie3 = Instantiate(this.tie3, new Vector3(-9.5f, 1.3f, 0f), Quaternion.identity);
                         aputie3.name = "tie3";
-                        tapaus = 3;
+                        tapaus2 = 3;
                         apuva = aputie3;
                         break;
 
                     case 4:
                         GameObject aputie4 = Instantiate(this.tie4, new Vector3(-9.5f, 1.3f, 0f), Quaternion.identity);
                         aputie4.name = "tie4";
-                        tapaus = 4;
+                        tapaus2 = 4;
                         apuva = aputie4;
                         break;
 
                     case 5:
                         GameObject aputie5 = Instantiate(this.tie5, new Vector3(-9.5f, 1.3f, 0f), Quaternion.identity);
                         aputie5.name = "tie5";
-                        tapaus = 5;
+                        tapaus2 = 5;
                         apuva = aputie5;
                         break;
 
                     case 6:
                         GameObject aputie6 = Instantiate(this.tie6, new Vector3(-9.5f, 1.3f, 0f), Quaternion.identity);
                         aputie6.name = "tie6";
-                        tapaus = 6;
+                        tapaus2 = 6;
                         apuva = aputie6;
                         break;
 
                     case 7:
                         GameObject aputie7 = Instantiate(this.tie7, new Vector3(-9.5f, 1.3f, 0f), Quaternion.identity);
                         aputie7.name = "tie7";
-                        tapaus = 7;
+                        tapaus2 = 7;
                         apuva = aputie7;
                         break;
 
                 }//switch
-
-
-                //lower tile randomization
-                int rdm1 = Random.Range(2, 3);
+                               
+                
                 //TÄLLÄ HETKELLÄ SPAWNAA PELKÄSTÄÄN PALIKKAA 2, TESTITARKOITUKSEKSI
                 //lower tile spawn on click
                 switch (rdm1)
@@ -325,32 +317,13 @@ public class TileSpawn : MonoBehaviour
                         break;
 
                 }//switch
-
-
+                                             
                 
-                //this selects the upper tile only
-                if (ylempi == true)
-                {          
-                    tapaus = rdm2;
-
-                    existingPositionz.Add(pos2);
-                }
-
-                //selects the lower tile
-                if (alempi == true)
-                {
-                    tapaus = rdm1;
-
-                    existingPositionz.Add(pos1);
-                }
-
             }
-                
-          
+                        
+            
+        } //mouse0 if
 
-
-        }
-
-    }
+    }//update
 
 }

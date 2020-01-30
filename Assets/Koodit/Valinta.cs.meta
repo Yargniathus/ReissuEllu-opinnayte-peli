@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: b16d36318173939488c3121359d59c55
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - slaideri: {fileID: 4060377673407260439, guid: f94af87bd3325104a81de54c772702a6,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

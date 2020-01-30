@@ -44,7 +44,7 @@ public class instantiatepalikka : MonoBehaviour
     {
     
         // Mouse1 heittää palikan xarvo yarvo kohtaan
-        if (Input.GetKeyUp(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
             {
 
             //pointterinlocaatio
@@ -110,62 +110,122 @@ public class instantiatepalikka : MonoBehaviour
             Vector3 pos = new Vector3(x, y, z);
             if (!(existingPositions.Contains(pos)) && !(x>8 || x<-8 || y>5 || y<-5))
             {
-                switch (TileSpawn.tapaus)
+                if (Valinta.ylempi == true)
                 {
-                    case 1:
-                        GameObject aputie1 = Instantiate(this.tie1, new Vector3(x, y, 0), Quaternion.identity);
-                        aputie1.name = "tie1";
-                        //pisteiden vähennys
-                        Pisteet.pisteet -= 2.5f;
+                    switch (TileSpawn.tapaus2)
+                    {
+                        case 1:
+                            GameObject aputie1 = Instantiate(this.tie1, new Vector3(x, y, 0), Quaternion.identity);
+                            aputie1.name = "tie1";
+                            //pisteiden vähennys
+                            Pisteet.pisteet -= 2.5f;
 
-                        break;
+                            break;
 
-                    case 2:
-                        GameObject aputie2 = Instantiate(this.tie2, new Vector3(x, y, 0), Quaternion.identity);
-                        aputie2.name = "tie2";
-                        Pisteet.pisteet -= 2.5f;
+                        case 2:
+                            GameObject aputie2 = Instantiate(this.tie2, new Vector3(x, y, 0), Quaternion.identity);
+                            aputie2.name = "tie2";
+                            Pisteet.pisteet -= 2.5f;
 
-                        break;
+                            break;
 
-                    case 3:
-                        GameObject aputie3 = Instantiate(this.tie3, new Vector3(x, y, 0), Quaternion.identity);
-                        aputie3.name = "tie3";
-                        Pisteet.pisteet -= 2.5f;
+                        case 3:
+                            GameObject aputie3 = Instantiate(this.tie3, new Vector3(x, y, 0), Quaternion.identity);
+                            aputie3.name = "tie3";
+                            Pisteet.pisteet -= 2.5f;
 
-                        break;
+                            break;
 
-                    case 4:
-                        GameObject aputie4 = Instantiate(this.tie4, new Vector3(x, y, 0), Quaternion.identity);
-                        aputie4.name = "tie4";
-                        Pisteet.pisteet -= 2.5f;
-                        break;
+                        case 4:
+                            GameObject aputie4 = Instantiate(this.tie4, new Vector3(x, y, 0), Quaternion.identity);
+                            aputie4.name = "tie4";
+                            Pisteet.pisteet -= 2.5f;
+                            break;
 
-                    case 5:
-                        GameObject aputie5 = Instantiate(this.tie5, new Vector3(x, y, 0), Quaternion.identity);
-                        aputie5.name = "tie5";
-                        Pisteet.pisteet -= 2.5f;
-                        break;
+                        case 5:
+                            GameObject aputie5 = Instantiate(this.tie5, new Vector3(x, y, 0), Quaternion.identity);
+                            aputie5.name = "tie5";
+                            Pisteet.pisteet -= 2.5f;
+                            break;
 
-                    case 6:
-                        GameObject aputie6 = Instantiate(this.tie6, new Vector3(x, y, 0), Quaternion.identity);
-                        aputie6.name = "tie6";
-                        Pisteet.pisteet -= 2.5f;
-                        break;
+                        case 6:
+                            GameObject aputie6 = Instantiate(this.tie6, new Vector3(x, y, 0), Quaternion.identity);
+                            aputie6.name = "tie6";
+                            Pisteet.pisteet -= 2.5f;
+                            break;
 
-                    case 7:
-                        GameObject aputie7 = Instantiate(this.tie7, new Vector3(x, y, 0), Quaternion.identity);
-                        aputie7.name = "tie7";
-                        Pisteet.pisteet -= 2.5f;
-                        break;
+                        case 7:
+                            GameObject aputie7 = Instantiate(this.tie7, new Vector3(x, y, 0), Quaternion.identity);
+                            aputie7.name = "tie7";
+                            Pisteet.pisteet -= 2.5f;
+                            break;
 
-                }//switch
+                    }//switch
 
-                //Instantiate(myPrefab, new Vector3(x, y, 0), Quaternion.identity);
-                existingPositions.Add(pos);
+                    //Instantiate(myPrefab, new Vector3(x, y, 0), Quaternion.identity);
+                    existingPositions.Add(pos);
+                } //if
 
-               
 
-            TileSpawn.tapaus = 0;
+                if (Valinta.alempi == true)
+                {
+                    switch (TileSpawn.tapaus)
+                    {
+                        case 1:
+                            GameObject aputie1 = Instantiate(this.tie1, new Vector3(x, y, 0), Quaternion.identity);
+                            aputie1.name = "tie1";
+                            //pisteiden vähennys
+                            Pisteet.pisteet -= 2.5f;
+
+                            break;
+
+                        case 2:
+                            GameObject aputie2 = Instantiate(this.tie2, new Vector3(x, y, 0), Quaternion.identity);
+                            aputie2.name = "tie2";
+                            Pisteet.pisteet -= 2.5f;
+
+                            break;
+
+                        case 3:
+                            GameObject aputie3 = Instantiate(this.tie3, new Vector3(x, y, 0), Quaternion.identity);
+                            aputie3.name = "tie3";
+                            Pisteet.pisteet -= 2.5f;
+
+                            break;
+
+                        case 4:
+                            GameObject aputie4 = Instantiate(this.tie4, new Vector3(x, y, 0), Quaternion.identity);
+                            aputie4.name = "tie4";
+                            Pisteet.pisteet -= 2.5f;
+                            break;
+
+                        case 5:
+                            GameObject aputie5 = Instantiate(this.tie5, new Vector3(x, y, 0), Quaternion.identity);
+                            aputie5.name = "tie5";
+                            Pisteet.pisteet -= 2.5f;
+                            break;
+
+                        case 6:
+                            GameObject aputie6 = Instantiate(this.tie6, new Vector3(x, y, 0), Quaternion.identity);
+                            aputie6.name = "tie6";
+                            Pisteet.pisteet -= 2.5f;
+                            break;
+
+                        case 7:
+                            GameObject aputie7 = Instantiate(this.tie7, new Vector3(x, y, 0), Quaternion.identity);
+                            aputie7.name = "tie7";
+                            Pisteet.pisteet -= 2.5f;
+                            break;
+
+                    }//switch
+
+                    //Instantiate(myPrefab, new Vector3(x, y, 0), Quaternion.identity);
+                    existingPositions.Add(pos);
+
+                }//if
+
+
+                TileSpawn.tapaus = 0;
             }//if
 
             
