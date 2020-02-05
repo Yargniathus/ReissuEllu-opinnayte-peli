@@ -33,7 +33,7 @@ public class Valinta : MonoBehaviour
             ylempi = false;
         }
 
-        Debug.Log(ylempi);
+        //Debug.Log(ylempi);
         //Debug.Log(alempi);
     }
 }
