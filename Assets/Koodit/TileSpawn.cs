@@ -55,56 +55,57 @@ public class TileSpawn : MonoBehaviour
         switch (rdm2)
         {
             case 1:
-                GameObject aputie1 = Instantiate(this.tie1, new Vector3(-9.5f, 1.3f, 0f), Quaternion.identity);
+                GameObject aputie1 = Instantiate(this.tie1, new Vector3(-9.5f, 1f, 0f), Quaternion.identity);
                 aputie1.name = "tie1";
-
-                tapaus = 1;
+                apuva = aputie1;
+                tapaus2 = 1;
 
                 break;
 
             case 2:
-                GameObject aputie2 = Instantiate(this.tie2, new Vector3(-9.5f, 1.3f, 0f), Quaternion.identity);
+                GameObject aputie2 = Instantiate(this.tie2, new Vector3(-9.5f, 1f, 0f), Quaternion.identity);
                 aputie2.name = "tie2";
-                tapaus = 2;
+                tapaus2 = 2;
                 apuva = aputie2;
                 break;
 
             case 3:
-                GameObject aputie3 = Instantiate(this.tie3, new Vector3(-9.5f, 1.3f, 0f), Quaternion.identity);
+                GameObject aputie3 = Instantiate(this.tie3, new Vector3(-9.5f, 1f, 0f), Quaternion.identity);
                 aputie3.name = "tie3";
-                tapaus = 3;
+                tapaus2 = 3;
                 apuva = aputie3;
                 break;
 
             case 4:
-                GameObject aputie4 = Instantiate(this.tie4, new Vector3(-9.5f, 1.3f, 0f), Quaternion.identity);
+                GameObject aputie4 = Instantiate(this.tie4, new Vector3(-9.5f, 1f, 0f), Quaternion.identity);
                 aputie4.name = "tie4";
-                tapaus = 4;
+                tapaus2 = 4;
                 apuva = aputie4;
                 break;
 
             case 5:
-                GameObject aputie5 = Instantiate(this.tie5, new Vector3(-9.5f, 1.3f, 0f), Quaternion.identity);
+                GameObject aputie5 = Instantiate(this.tie5, new Vector3(-9.5f, 1f, 0f), Quaternion.identity);
                 aputie5.name = "tie5";
-                tapaus = 5;
+                tapaus2 = 5;
                 apuva = aputie5;
                 break;
 
             case 6:
-                GameObject aputie6 = Instantiate(this.tie6, new Vector3(-9.5f, 1.3f, 0f), Quaternion.identity);
+                GameObject aputie6 = Instantiate(this.tie6, new Vector3(-9.5f, 1f, 0f), Quaternion.identity);
                 aputie6.name = "tie6";
-                tapaus = 6;
+                tapaus2 = 6;
                 apuva = aputie6;
                 break;
 
             case 7:
-                GameObject aputie7 = Instantiate(this.tie7, new Vector3(-9.5f, 1.3f, 0f), Quaternion.identity);
+                GameObject aputie7 = Instantiate(this.tie7, new Vector3(-9.5f, 1f, 0f), Quaternion.identity);
                 aputie7.name = "tie7";
-                tapaus = 7;
+                tapaus2 = 7;
                 apuva = aputie7;
                 break;
 
         }//switch
+
 
         //second tile spawn (can not be selected yet)
         int rdm1 = Random.Range(1, 8);
@@ -114,57 +115,57 @@ public class TileSpawn : MonoBehaviour
         switch (rdm1)
         {
             case 1:
-                GameObject aputie1 = Instantiate(this.tie1, new Vector3(-9.5f, -1.3f, 0f), Quaternion.identity);
+                GameObject aputie1 = Instantiate(this.tie1, new Vector3(-9.5f, -2.5f, 0f), Quaternion.identity);
                 aputie1.name = "tie1";
-
+                apuva = aputie1;
                 tapaus = 1;
 
                 break;
 
             case 2:
-                GameObject aputie2 = Instantiate(this.tie2, new Vector3(-9.5f, -1.3f, 0f), Quaternion.identity);
+                GameObject aputie2 = Instantiate(this.tie2, new Vector3(-9.5f, -2.5f, 0f), Quaternion.identity);
                 aputie2.name = "tie2";
                 tapaus = 2;
                 apuva = aputie2;
                 break;
 
             case 3:
-                GameObject aputie3 = Instantiate(this.tie3, new Vector3(-9.5f, -1.3f, 0f), Quaternion.identity);
+                GameObject aputie3 = Instantiate(this.tie3, new Vector3(-9.5f, -2.5f, 0f), Quaternion.identity);
                 aputie3.name = "tie3";
                 tapaus = 3;
                 apuva = aputie3;
                 break;
 
             case 4:
-                GameObject aputie4 = Instantiate(this.tie4, new Vector3(-9.5f, -1.3f, 0f), Quaternion.identity);
+                GameObject aputie4 = Instantiate(this.tie4, new Vector3(-9.5f, -2.5f, 0f), Quaternion.identity);
                 aputie4.name = "tie4";
                 tapaus = 4;
                 apuva = aputie4;
                 break;
 
             case 5:
-                GameObject aputie5 = Instantiate(this.tie5, new Vector3(-9.5f, -1.3f, 0f), Quaternion.identity);
+                GameObject aputie5 = Instantiate(this.tie5, new Vector3(-9.5f, -2.5f, 0f), Quaternion.identity);
                 aputie5.name = "tie5";
                 tapaus = 5;
                 apuva = aputie5;
                 break;
 
             case 6:
-                GameObject aputie6 = Instantiate(this.tie6, new Vector3(-9.5f, -1.3f, 0f), Quaternion.identity);
+                GameObject aputie6 = Instantiate(this.tie6, new Vector3(-9.5f, -2.5f, 0f), Quaternion.identity);
                 aputie6.name = "tie6";
                 tapaus = 6;
                 apuva = aputie6;
                 break;
 
             case 7:
-                GameObject aputie7 = Instantiate(this.tie7, new Vector3(-9.5f, -1.3f, 0f), Quaternion.identity);
+                GameObject aputie7 = Instantiate(this.tie7, new Vector3(-9.5f, -2.5f, 0f), Quaternion.identity);
                 aputie7.name = "tie7";
                 tapaus = 7;
                 apuva = aputie7;
                 break;
 
         }//switch
-                             
+
 
 
     }//start
@@ -210,7 +211,7 @@ public class TileSpawn : MonoBehaviour
                 switch (rdm2)
                 {
                     case 1:
-                        GameObject aputie1 = Instantiate(this.tie1, new Vector3(-9.5f, 1.3f, 0f), Quaternion.identity);
+                        GameObject aputie1 = Instantiate(this.tie1, new Vector3(-9.5f, 1f, 0f), Quaternion.identity);
                         aputie1.name = "tie1";
                         apuva = aputie1;
                         tapaus2 = 1;
@@ -218,42 +219,42 @@ public class TileSpawn : MonoBehaviour
                         break;
 
                     case 2:
-                        GameObject aputie2 = Instantiate(this.tie2, new Vector3(-9.5f, 1.3f, 0f), Quaternion.identity);
+                        GameObject aputie2 = Instantiate(this.tie2, new Vector3(-9.5f, 1f, 0f), Quaternion.identity);
                         aputie2.name = "tie2";
                         tapaus2 = 2;
                         apuva = aputie2;
                         break;
 
                     case 3:
-                        GameObject aputie3 = Instantiate(this.tie3, new Vector3(-9.5f, 1.3f, 0f), Quaternion.identity);
+                        GameObject aputie3 = Instantiate(this.tie3, new Vector3(-9.5f, 1f, 0f), Quaternion.identity);
                         aputie3.name = "tie3";
                         tapaus2 = 3;
                         apuva = aputie3;
                         break;
 
                     case 4:
-                        GameObject aputie4 = Instantiate(this.tie4, new Vector3(-9.5f, 1.3f, 0f), Quaternion.identity);
+                        GameObject aputie4 = Instantiate(this.tie4, new Vector3(-9.5f, 1f, 0f), Quaternion.identity);
                         aputie4.name = "tie4";
                         tapaus2 = 4;
                         apuva = aputie4;
                         break;
 
                     case 5:
-                        GameObject aputie5 = Instantiate(this.tie5, new Vector3(-9.5f, 1.3f, 0f), Quaternion.identity);
+                        GameObject aputie5 = Instantiate(this.tie5, new Vector3(-9.5f, 1f, 0f), Quaternion.identity);
                         aputie5.name = "tie5";
                         tapaus2 = 5;
                         apuva = aputie5;
                         break;
 
                     case 6:
-                        GameObject aputie6 = Instantiate(this.tie6, new Vector3(-9.5f, 1.3f, 0f), Quaternion.identity);
+                        GameObject aputie6 = Instantiate(this.tie6, new Vector3(-9.5f, 1f, 0f), Quaternion.identity);
                         aputie6.name = "tie6";
                         tapaus2 = 6;
                         apuva = aputie6;
                         break;
 
                     case 7:
-                        GameObject aputie7 = Instantiate(this.tie7, new Vector3(-9.5f, 1.3f, 0f), Quaternion.identity);
+                        GameObject aputie7 = Instantiate(this.tie7, new Vector3(-9.5f, 1f, 0f), Quaternion.identity);
                         aputie7.name = "tie7";
                         tapaus2 = 7;
                         apuva = aputie7;
@@ -267,7 +268,7 @@ public class TileSpawn : MonoBehaviour
                 switch (rdm1)
                 {
                     case 1:
-                        GameObject aputie1 = Instantiate(this.tie1, new Vector3(-9.5f, -1.3f, 0f), Quaternion.identity);
+                        GameObject aputie1 = Instantiate(this.tie1, new Vector3(-9.5f, -2.5f, 0f), Quaternion.identity);
                         aputie1.name = "tie1";
                         apuva = aputie1;
                         tapaus = 1;
@@ -275,42 +276,42 @@ public class TileSpawn : MonoBehaviour
                         break;
 
                     case 2:
-                        GameObject aputie2 = Instantiate(this.tie2, new Vector3(-9.5f, -1.3f, 0f), Quaternion.identity);
+                        GameObject aputie2 = Instantiate(this.tie2, new Vector3(-9.5f, -2.5f, 0f), Quaternion.identity);
                         aputie2.name = "tie2";
                         tapaus = 2;
                         apuva = aputie2;
                         break;
 
                     case 3:
-                        GameObject aputie3 = Instantiate(this.tie3, new Vector3(-9.5f, -1.3f, 0f), Quaternion.identity);
+                        GameObject aputie3 = Instantiate(this.tie3, new Vector3(-9.5f, -2.5f, 0f), Quaternion.identity);
                         aputie3.name = "tie3";
                         tapaus = 3;
                         apuva = aputie3;
                         break;
 
                     case 4:
-                        GameObject aputie4 = Instantiate(this.tie4, new Vector3(-9.5f, -1.3f, 0f), Quaternion.identity);
+                        GameObject aputie4 = Instantiate(this.tie4, new Vector3(-9.5f, -2.5f, 0f), Quaternion.identity);
                         aputie4.name = "tie4";
                         tapaus = 4;
                         apuva = aputie4;
                         break;
 
                     case 5:
-                        GameObject aputie5 = Instantiate(this.tie5, new Vector3(-9.5f, -1.3f, 0f), Quaternion.identity);
+                        GameObject aputie5 = Instantiate(this.tie5, new Vector3(-9.5f, -2.5f, 0f), Quaternion.identity);
                         aputie5.name = "tie5";
                         tapaus = 5;
                         apuva = aputie5;
                         break;
 
                     case 6:
-                        GameObject aputie6 = Instantiate(this.tie6, new Vector3(-9.5f, -1.3f, 0f), Quaternion.identity);
+                        GameObject aputie6 = Instantiate(this.tie6, new Vector3(-9.5f, -2.5f, 0f), Quaternion.identity);
                         aputie6.name = "tie6";
                         tapaus = 6;
                         apuva = aputie6;
                         break;
 
                     case 7:
-                        GameObject aputie7 = Instantiate(this.tie7, new Vector3(-9.5f, -1.3f, 0f), Quaternion.identity);
+                        GameObject aputie7 = Instantiate(this.tie7, new Vector3(-9.5f, -2.5f, 0f), Quaternion.identity);
                         aputie7.name = "tie7";
                         tapaus = 7;
                         apuva = aputie7;
