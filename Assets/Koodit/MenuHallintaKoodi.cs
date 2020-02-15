@@ -17,6 +17,7 @@ public class MenuHallintaKoodi : MonoBehaviour
     {        
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Pisteet.pisteet = 100;
+        instantiatepalikka.existingPositions.Clear();
     }
 
     public void LopetaPainettu()

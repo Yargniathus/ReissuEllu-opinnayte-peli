@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class AloitusruutuKoodi : MonoBehaviour
-{    
+{
+    public GameObject OhjeTaulu = null;
 
     public void Aloita_Painettu()
     {
@@ -14,5 +15,11 @@ public class AloitusruutuKoodi : MonoBehaviour
     public void Lopeta_Painettu()
     {
         Application.Quit();
+    }
+
+    public void Ohjeet_Painettu()
+    {
+        GameObject apumenu = Instantiate(this.OhjeTaulu, new Vector3(0,0,0), Quaternion.identity);
+        apumenu.name = "ohjeet";
     }
 }

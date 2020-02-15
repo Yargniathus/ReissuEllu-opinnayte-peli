@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: 160d637b2f153e34e81e52b49c447b09
+guid: 42ea6d269f339314cae07ab4d550924a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - OhjeTaulu: {fileID: 319356373541329334, guid: 12b7db38a86069a4fab390f975d13fd2,
-      type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
