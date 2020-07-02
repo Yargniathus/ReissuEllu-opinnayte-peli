@@ -22,6 +22,8 @@ public class MenuHallintaKoodi : MonoBehaviour
 
     public void LopetaPainettu()
     {
+        Pisteet.pisteet = 100;
+        instantiatepalikka.existingPositions.Clear();
         SceneManager.LoadScene("StartScene");
     }
 }
