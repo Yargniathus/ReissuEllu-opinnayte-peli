@@ -197,7 +197,7 @@ public class TileSpawn : MonoBehaviour
             Vector3 pos1 = new Vector3(-10f, -1.3f, 0f);
 
             //also if the click is on the grid
-            if (!(existingPositionz.Contains(pos2)) && !(xhiiri > 8 || xhiiri < -8 || yhiiri > 5 || yhiiri < -5))
+            if (!(existingPositionz.Contains(pos2)) && !(xhiiri > 8 || xhiiri < -8 || yhiiri > 5 || yhiiri < -5) && instantiatepalikka.tilePlaced)
             {
 
 

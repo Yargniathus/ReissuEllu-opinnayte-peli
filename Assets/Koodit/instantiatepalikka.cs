@@ -7,8 +7,10 @@ public class instantiatepalikka : MonoBehaviour
     public GameObject myPrefab;
     public float xarvo = 1.0F;
     public float yarvo = 1.0F;
-    public float x = 1.0F;
-    public float y = 1.0F;
+    public static float x = 1.0F;
+    public static float y = 1.0F;
+    public static float z = 0F;
+    public static bool tilePlaced;
     public static List<Vector3> existingPositions = new List<Vector3>();
 
     public bool ylempi = false;
@@ -46,13 +48,14 @@ public class instantiatepalikka : MonoBehaviour
         // Mouse1 heittää palikan xarvo yarvo kohtaan
         if (Input.GetKeyDown(KeyCode.Mouse0))
             {
+            tilePlaced = false;
 
             //pointterinlocaatio
             Vector3 xyz = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            float x = xyz.x;
-            float y = xyz.y;
-            float z = 0;
-            //y akselin ohjaus
+            x = xyz.x;
+            y = xyz.y;
+            
+            
             if (y < 5 && y > 3)
                 {
                 y = 4;
@@ -106,7 +109,7 @@ public class instantiatepalikka : MonoBehaviour
             {
                 x = 7;
             }
-            // Instantiate the projectile at the position and rotation of this transform
+            
             Vector3 pos = new Vector3(x, y, z);
             if (!(existingPositions.Contains(pos)) && !(x>8 || x<-8 || y>5 || y<-5))
             {
@@ -160,11 +163,10 @@ public class instantiatepalikka : MonoBehaviour
                             Pisteet.pisteet -= 2.5f;
                             break;
 
-                    }//switch
-
-                    //Instantiate(myPrefab, new Vector3(x, y, 0), Quaternion.identity);
+                    }
                     existingPositions.Add(pos);
-                } //if
+                    tilePlaced = true;
+                } 
 
 
                 if (Valinta.alempi == true)
@@ -217,20 +219,19 @@ public class instantiatepalikka : MonoBehaviour
                             Pisteet.pisteet -= 2.5f;
                             break;
 
-                    }//switch
-
-                    //Instantiate(myPrefab, new Vector3(x, y, 0), Quaternion.identity);
+                    }
                     existingPositions.Add(pos);
+                    tilePlaced = true;
 
-                }//if
+                }
 
 
                 TileSpawn.tapaus = 0;
-            }//if
+            }
 
             
 
-        }//if
+        }
         
     }
 }
