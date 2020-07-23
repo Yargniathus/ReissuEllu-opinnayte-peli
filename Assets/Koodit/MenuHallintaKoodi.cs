@@ -13,11 +13,16 @@ public class MenuHallintaKoodi : MonoBehaviour
         GameObject.Destroy(Menu);        
     }
 
-    public void AlustaPainettu ()
-    {        
+    public void AlustaPainettu()
+    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Pisteet.pisteet = 100;
         instantiatepalikka.existingPositions.Clear();
+    }
+
+    public void ohjePainettu()
+    {
+        SceneManager.LoadScene("OhjeetSceneNew");
     }
 
     public void LopetaPainettu()

@@ -19,7 +19,6 @@ public class AloitusruutuKoodi : MonoBehaviour
 
     public void Ohjeet_Painettu()
     {
-        GameObject apumenu = Instantiate(this.OhjeTaulu, new Vector3(0,0,0), Quaternion.identity);
-        apumenu.name = "ohjeet";
+        SceneManager.LoadScene("OhjeSceneNew");
     }
 }

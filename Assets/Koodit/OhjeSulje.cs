@@ -1,19 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class OhjeKoodi : MonoBehaviour
+public class OhjeSulje : MonoBehaviour
 {
-    public GameObject ohje = null;
     // Start is called before the first frame update
     void Start()
     {
-        
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
     }
 
     public void suljePainettu()
     {
-        ohje = GameObject.Find("ohjeet");
-        GameObject.Destroy(ohje);
+        SceneManager.LoadScene("StartScene");
     }
 }
