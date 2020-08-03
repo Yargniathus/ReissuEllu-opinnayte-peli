@@ -1660,8 +1660,6 @@ MonoBehaviour:
   myPrefab: {fileID: 0}
   xarvo: 1
   yarvo: 1
-  x: 1
-  y: 1
   ylempi: 0
   alempi: 0
   tie1: {fileID: 0}
@@ -1671,6 +1669,7 @@ MonoBehaviour:
   tie5: {fileID: 0}
   tie6: {fileID: 0}
   tie7: {fileID: 0}
+  merkki1: {fileID: 1344290174320308120, guid: b173abea06352924c9920583aa7b27dd, type: 3}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -2808,6 +2807,7 @@ GameObject:
   - component: {fileID: 896886940}
   - component: {fileID: 896886942}
   - component: {fileID: 896886941}
+  - component: {fileID: 896886943}
   m_Layer: 5
   m_Name: pisteText
   m_TagString: Untagged
@@ -2831,7 +2831,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 183, y: -48.2}
+  m_AnchoredPosition: {x: 148, y: -48.2}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &896886941
@@ -2874,6 +2874,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 896886939}
   m_CullTransparentMesh: 0
+--- !u!114 &896886943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896886939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &900735188
 GameObject:
   m_ObjectHideFlags: 0
@@ -4560,7 +4575,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

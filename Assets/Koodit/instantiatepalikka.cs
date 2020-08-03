@@ -25,6 +25,7 @@ public class instantiatepalikka : MonoBehaviour
     public GameObject tie5 = null;
     public GameObject tie6 = null;
     public GameObject tie7 = null;
+    public GameObject merkki1;
 
 
     // Start is called before the first frame update
@@ -38,6 +39,7 @@ public class instantiatepalikka : MonoBehaviour
         tie5 = GameObject.Find("Tie_VA");
         tie6 = GameObject.Find("Tie_verti");
         tie7 = GameObject.Find("Tie_VY");
+        
 
     }
 
@@ -228,8 +230,13 @@ public class instantiatepalikka : MonoBehaviour
 
                 TileSpawn.tapaus = 0;
             }
+            else if (existingPositions.Contains(pos))
+            {
+                Instantiate(merkki1, new Vector3(0, 0, 0), Quaternion.identity);
+            }
 
-            
+
+
 
         }
         
