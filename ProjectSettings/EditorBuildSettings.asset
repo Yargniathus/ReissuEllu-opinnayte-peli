@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: Assets/Scenes/OhjeSceneNew.unity
     guid: 46d366655a3a9c544bcbbfa8e9c53443
   - enabled: 0
-    path: Assets/Scenes/OhjeetScene.unity
+    path: 
     guid: 1f44169f87e0de948a54052b7c7e2053
+  - enabled: 1
+    path: Assets/Scenes/Ohje 2.unity
+    guid: dd4c2847601976c41a170983b3144893
+  - enabled: 1
+    path: Assets/Scenes/Ohje 3.unity
+    guid: 370bd9089de066d4da3f7274750dd0c5
   m_configObjects: {}

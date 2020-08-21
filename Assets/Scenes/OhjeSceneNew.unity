@@ -454,6 +454,7 @@ GameObject:
   - component: {fileID: 227611748}
   - component: {fileID: 227611747}
   - component: {fileID: 227611749}
+  - component: {fileID: 227611750}
   m_Layer: 0
   m_Name: alempibox
   m_TagString: Untagged
@@ -530,9 +531,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 227611746}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9284e079677c6634a9a39513c4159528, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &227611750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227611746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc67879f9055ae047b95f677a95eeda1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &234883237
@@ -1804,6 +1817,7 @@ GameObject:
   - component: {fileID: 616202597}
   - component: {fileID: 616202596}
   - component: {fileID: 616202595}
+  - component: {fileID: 616202604}
   m_Layer: 0
   m_Name: kamera
   m_TagString: MainCamera
@@ -1978,6 +1992,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &616202604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616202594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc67879f9055ae047b95f677a95eeda1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &654180715
 GameObject:
   m_ObjectHideFlags: 0
@@ -2721,6 +2747,7 @@ GameObject:
   - component: {fileID: 929444999}
   - component: {fileID: 929444998}
   - component: {fileID: 929444997}
+  - component: {fileID: 929445000}
   m_Layer: 0
   m_Name: ylempibox
   m_TagString: Untagged
@@ -2809,6 +2836,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &929445000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929444996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc67879f9055ae047b95f677a95eeda1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &937338069
 GameObject:
   m_ObjectHideFlags: 0
@@ -4288,7 +4327,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sulje
+  m_Text: Seuraava
 --- !u!222 &1285351493
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6917,6 +6956,7 @@ GameObject:
   - component: {fileID: 1894311416}
   - component: {fileID: 1894311415}
   - component: {fileID: 1894311414}
+  - component: {fileID: 1894311418}
   m_Layer: 5
   m_Name: exit_Button
   m_TagString: Untagged
@@ -6951,7 +6991,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1894311412}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9284e079677c6634a9a39513c4159528, type: 3}
   m_Name: 
@@ -6996,8 +7036,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 227611749}
-        m_MethodName: suljePainettu
+      - m_Target: {fileID: 227611750}
+        m_MethodName: seuraava1Painettu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7006,7 +7046,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: button_click
           m_BoolArgument: 0
-        m_CallState: 1
+        m_CallState: 2
 --- !u!114 &1894311416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7042,6 +7082,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1894311412}
   m_CullTransparentMesh: 0
+--- !u!114 &1894311418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894311412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc67879f9055ae047b95f677a95eeda1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1894888005
 GameObject:
   m_ObjectHideFlags: 0
@@ -7132,6 +7184,7 @@ GameObject:
   - component: {fileID: 1916132318}
   - component: {fileID: 1916132317}
   - component: {fileID: 1916132316}
+  - component: {fileID: 1916132319}
   m_Layer: 0
   m_Name: "k\xE4si2"
   m_TagString: Untagged
@@ -7220,6 +7273,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 76.700005}
+--- !u!114 &1916132319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916132315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc67879f9055ae047b95f677a95eeda1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1941391062
 GameObject:
   m_ObjectHideFlags: 0
