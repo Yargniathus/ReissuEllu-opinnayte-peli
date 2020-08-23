@@ -27,4 +27,18 @@ public class Ohje1Seuraava : MonoBehaviour
         SceneManager.LoadScene("Ohje 3");
     }
 
+    public void edellinen2Painettu()
+    {
+        SceneManager.LoadScene("OhjeSceneNew");
+    }
+
+    public void sulje3Painettu()
+    {
+        SceneManager.LoadScene("StartScene");
+    }
+
+    public void edellinen3Painettu()
+    {
+        SceneManager.LoadScene("Ohje 2");
+    }
 }
