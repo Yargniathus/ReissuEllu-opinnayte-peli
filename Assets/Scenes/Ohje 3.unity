@@ -1218,7 +1218,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.80321366, y: 0.06738106}
   m_AnchorMax: {x: 0.96049523, y: 0.12730947}
-  m_AnchoredPosition: {x: -1.9000015, y: 2}
+  m_AnchoredPosition: {x: -1.8999939, y: 2}
   m_SizeDelta: {x: 3.699997, y: 6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &373677344
@@ -5432,7 +5432,7 @@ PrefabInstance:
     - target: {fileID: 3188811675847396774, guid: cc49b0e483cca2340b7b1741212e5fa4,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 50
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3188811675847396774, guid: cc49b0e483cca2340b7b1741212e5fa4,
         type: 3}
@@ -7192,7 +7192,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 60
+  m_SortingOrder: 70
   m_Sprite: {fileID: 21300000, guid: 8c0c906643289024692673b5a89cc112, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
