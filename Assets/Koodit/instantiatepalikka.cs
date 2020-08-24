@@ -39,7 +39,8 @@ public class instantiatepalikka : MonoBehaviour
         tie5 = GameObject.Find("Tie_VA");
         tie6 = GameObject.Find("Tie_verti");
         tie7 = GameObject.Find("Tie_VY");
-        
+        existingPositions.Add(new Vector3(-7F, -4F, 0F));
+
 
     }
 
