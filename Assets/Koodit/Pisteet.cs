@@ -11,6 +11,7 @@ public class Pisteet : MonoBehaviour
     void Start()
     {
         this.pistetext = GameObject.Find("pisteText");
+        pisteet = 100;
     }
 
     // Update is called once per frame
