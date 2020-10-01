@@ -3367,6 +3367,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4023598468566220135, guid: 3896b2a59c39c4746ac7dd7968c1b70b,
+        type: 3}
+      propertyPath: m_Name
+      value: Tie_risteys
+      objectReference: {fileID: 0}
     - target: {fileID: 4023598468566220134, guid: 3896b2a59c39c4746ac7dd7968c1b70b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3427,10 +3432,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4023598468566220135, guid: 3896b2a59c39c4746ac7dd7968c1b70b,
+    - target: {fileID: 4023598468566220129, guid: 3896b2a59c39c4746ac7dd7968c1b70b,
         type: 3}
-      propertyPath: m_Name
-      value: Tie_risteys
+      propertyPath: m_SortingOrder
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3896b2a59c39c4746ac7dd7968c1b70b, type: 3}
