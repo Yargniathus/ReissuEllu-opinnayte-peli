@@ -6254,7 +6254,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Tavoitteena on tehd\xE4 tie autolta pokaalin luo. Valitse vasemmalta haluamasi
+  m_Text: "Tavoitteena on tehd\xE4 tie autolta talon luo. Valitse vasemmalta haluamasi
     tiepala ja sijoita se ruudukkoon koskettamalla haluamaasi ruutua."
 --- !u!222 &1673152813
 CanvasRenderer:
